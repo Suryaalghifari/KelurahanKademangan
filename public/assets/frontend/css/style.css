@@ -1022,3 +1022,6 @@ textarea:valid:not(:focus):not(:placeholder-shown) {
 #globalLoader {
   transition: opacity 0.5s ease;
 }
+#globalLoader {
+  transition: opacity 0.5s ease-in-out;
+}

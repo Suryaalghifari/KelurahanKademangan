@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= esc($title ?? 'Kelurahan Contoh - Website Resmi') ?></title>
     <link rel="stylesheet" href="<?= base_url('assets/frontend/css/style.css') ?>">
+    <link rel="icon" type="image/png" href="<?= base_url('uploads/logo/kademangan.png') ?>">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
@@ -19,6 +20,8 @@
         autoplay
         ></lottie-player>
     </div>
+    
+
     <!-- Header -->
     <?= $this->include('frontend/partials/header') ?>
 
@@ -85,7 +88,18 @@
         }
     });
     </script>
-
-
+    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Kelurahan"
+    id="waButton"
+    style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;"
+    target="_blank">
+    <lottie-player
+        src="<?= base_url('assets/frontend/anim/whatsapp.json') ?>"
+        background="transparent"
+        speed="1"
+        style="width: 60px; height: 60px;"
+        loop
+        autoplay>
+    </lottie-player>
+    </a>
 </body>
 </html>

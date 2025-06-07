@@ -9,7 +9,7 @@ class Pengaduan extends BaseController
 {
     public function index()
     {
-        return view('frontend/pengaduan');
+        return view('frontend/pengaduan/pengaduan');
     }
 
     public function kirim()
