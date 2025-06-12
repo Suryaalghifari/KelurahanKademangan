@@ -3,10 +3,14 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo-section">
-                    <div class="logo">KC</div>
+                    <div class="logo">
+                        <img src="<?= base_url('uploads/logo/kademangan.png') ?>" class="logo-img" alt="Logo Kelurahan" />
+
+                    </div>
+
                     <div class="logo-text">
-                        <h1>Kelurahan Contoh</h1>
-                        <p>Kecamatan Contoh, Kota Contoh</p>
+                        <h1>Kelurahan Kademangan</h1>
+                        <p>Kecamatan Setu, Kota Tanggerang Selatan</p>
                     </div>
                 </div>
 
@@ -20,7 +24,7 @@
                             Profil <span class="dropdown-arrow">▼</span>
                         </a>
                         <div class="dropdown">
-                            <a href="#sejarah" class="dropdown-item">Sejarah Kelurahan</a>
+                            <a href="<?= base_url('/') ?>" class="dropdown-item">Sejarah Kelurahan</a>
                             <a href="#visi-misi" class="dropdown-item">Visi & Misi</a>
                             <a href="#struktur" class="dropdown-item">Struktur Organisasi</a>
                             <a href="#geografis" class="dropdown-item">Kondisi Geografis</a>
@@ -34,8 +38,8 @@
                             Layanan <span class="dropdown-arrow">▼</span>
                         </a>
                         <div class="dropdown">
-                            <a href="#surat-domisili" class="dropdown-item">Surat Keterangan Domisili</a>
-                            <a href="#sktm" class="dropdown-item">Surat Keterangan Tidak Mampu</a>
+                            <a href="<?= base_url('skck') ?>" class="dropdown-item">Surat Pengantar SKCK</a>
+                            <a href="<?= base_url('suratmenikah') ?>" class="dropdown-item">Surat Pengajuan Menikah</a>
                             <a href="#pengantar-ktp" class="dropdown-item">Surat Pengantar KTP</a>
                             <a href="#legalisir" class="dropdown-item">Legalisir Dokumen</a>
                             <div class="dropdown-separator"></div>
@@ -82,8 +86,9 @@
 
                 <div class="mobile-nav" id="mobileNav">
                     <div class="mobile-nav-section">
+                        <a href="<?= base_url('/') ?>" class="nav-link">Beranda</a>
                         <div class="mobile-nav-title">Profil</div>
-                        <a href="#sejarah" class="mobile-nav-item">Sejarah Kelurahan</a>
+                        <a href="<?= base_url('/') ?>" class="dropdown-item">Sejarah Kelurahan</a>
                         <a href="#visi-misi" class="mobile-nav-item">Visi & Misi</a>
                         <a href="#struktur" class="mobile-nav-item">Struktur Organisasi</a>
                         <a href="#geografis" class="mobile-nav-item">Kondisi Geografis</a>
@@ -94,10 +99,10 @@
                         <div class="mobile-nav-title">Layanan</div>
                         <a href="#surat-domisili" class="mobile-nav-item">Surat Keterangan Domisili</a>
                         <a href="#sktm" class="mobile-nav-item">Surat Keterangan Tidak Mampu</a>
-                        <a href="#pengantar-ktp" class="mobile-nav-item">Surat Pengantar KTP</a>
-                        <a href="#legalisir" class="mobile-nav-item">Legalisir Dokumen</a>
+                        <a href="<?= base_url('skck') ?>" class="dropdown-item">Surat Pengantar SKCK</a>
+                        <a href="<?= base_url('suratmenikah') ?>" class="dropdown-item">Surat Pengajuan Menikah</a>
                         <a href="#surat-usaha" class="mobile-nav-item">Surat Keterangan Usaha</a>
-                        <a href="#pengaduan" class="mobile-nav-item">Pengaduan Online</a>
+                        <a href="<?= base_url('pengaduan') ?>" class="mobile-nav-item">Pengaduan Online</a>
                     </div>
 
                     <div class="mobile-nav-section">
@@ -119,3 +124,5 @@
             </div>
         </div>
     </header>
+
+    

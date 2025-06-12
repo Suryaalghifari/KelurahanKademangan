@@ -33,7 +33,12 @@ class Pengaduan extends BaseController
         $file = $this->request->getFile('lampiran');
         if ($file && $file->getName() !== '' && $file->isValid() && !$file->hasMoved()) {
             $fileName = $file->getRandomName();
-            $file->move('uploads/pengaduan', $fileName);
+            $uploadPath = WRITEPATH . 'uploads/pengaduan';
+            if (!is_dir($uploadPath)) {
+                mkdir($uploadPath, 0755, true); // Pastikan foldernya ada
+            }
+            $file->move($uploadPath, $fileName);
+
             $data['lampiran'] = $fileName;
         }
 

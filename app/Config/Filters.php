@@ -70,5 +70,6 @@ class Filters extends BaseConfig
      *
      * @var array<string, array<string, list<string>>>
      */
-    public array $filters = [];
+    public array $filters = ['adminauth' => ['before' => ['admin', 'admin/*']],
+];
 }

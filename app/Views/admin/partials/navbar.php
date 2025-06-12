@@ -15,9 +15,9 @@
       </div>
       <ul class="navbar-nav d-flex align-items-center justify-content-end">
 
-        <!-- Tombol Online Builder -->
-        <li class="nav-item d-flex align-items-center">
-          <a class="btn btn-outline-primary btn-sm mb-0 me-3" target="_blank" href="https://www.creative-tim.com/builder">Online Builder</a>
+        <!-- Tombol Kademangan -->
+        <li class="nav-item d-flex align-items-center me-3">
+          <a class="btn btn-outline-primary btn-sm mb-0" href="#">Kademangan</a>
         </li>
 
         <!-- Tombol Sidebar Toggler Responsive -->
@@ -32,11 +32,16 @@
         </li>
 
         <!-- Ikon Akun -->
+        <!-- Foto Profil di Navbar -->
+    <!-- Foto Profil Admin Sederhana -->
+       <!-- Foto Profil Sementara (pakai logo kademangan.png) -->
         <li class="nav-item d-flex align-items-center">
-          <a href="#" class="nav-link text-body font-weight-bold px-0">
-            <i class="material-symbols-rounded">account_circle</i>
-          </a>
+          <img src="<?= base_url('uploads/profile/orang.png') ?>" 
+              class="avatar avatar-sm rounded-circle" 
+              alt="Foto Profil"
+              style="width: 36px; height: 36px; object-fit: cover;">
         </li>
+
       </ul>
     </div>
   </div>

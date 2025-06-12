@@ -1,11 +1,18 @@
 <?= $this->extend('layouts/admin_layout') ?>
 <?= $this->section('content') ?>
 
+<div class="container-fluid py-2">
+  <div class="ms-3 mb-4">
+    <h3 class="mb-0 h4 font-weight-bolder">Pengaduan Masyarakat</h3>
+    <p class="mb-0"> Tinjau dan Kelola Laporan Pengaduan Yang Dikirim Oleh Masyarakat.</p>
+  </div>
+  <div class="row">
+
 <div class="container-fluid py-4">
   <div class="card my-4">
     <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
       <div class="bg-gradient-dark shadow-dark border-radius-lg pt-4 pb-3">
-        <h6 class="text-white text-capitalize ps-3">Tabel Pengaduan Masyarakat</h6>
+        <h6 class="text-white text-capitalize ps-3">Daftar Pengaduan Terbaru</h6>
       </div>
     </div>
     <div class="card-body px-0 pb-2">
@@ -57,10 +64,19 @@
                 <span class="text-secondary text-xs font-weight-bold"><?= date('d/m/Y H:i', strtotime($row['created_at'])) ?></span>
               </td>
               <td class="align-middle text-center">
-                <a href="<?= base_url('admin/pengaduan/detail/' . $row['id']) ?>" class="text-primary text-xs font-weight-bold">
-                  Detail
-                </a>
-              </td>
+              <a href="<?= base_url('admin/pengaduan/detail/' . $row['id']) ?>" class="btn btn-sm btn-outline-info me-1">
+                Detail
+              </a>
+              
+              <form id="formDelete<?= $row['id'] ?>" action="<?= base_url('admin/pengaduan/delete/' . $row['id']) ?>" method="post" style="display:inline;">
+                <?= csrf_field() ?>
+                <button type="button" 
+                  onclick="showConfirmDialog('Yakin ingin menghapus pengaduan ini?', () => document.getElementById('formDelete<?= $row['id'] ?>').submit())" 
+                  class="btn btn-sm btn-outline-danger">
+                  Hapus
+                </button>
+              </form>
+            </td>
             </tr>
             <?php endforeach; ?>
           </tbody>

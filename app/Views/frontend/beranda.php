@@ -7,15 +7,14 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Selamat Datang di Website Kelurahan Contoh</h1>
+                    <h1>Selamat Datang di Website Kelurahan Kademangan</h1>
                     <p>Melayani masyarakat dengan sepenuh hati untuk kemajuan bersama</p>
                     <div class="hero-buttons">
                         <a href="#layanan" class="btn btn-primary">Layanan Online</a>
                         <a href="#kontak" class="btn btn-outline">Hubungi Kami</a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <p>Kantor Kelurahan</p>
+                <div class="hero-image" style="background-image: url('<?= base_url('uploads/logo/kelurahan.png') ?>');">
                 </div>
             </div>
         </div>
@@ -95,7 +94,9 @@
 
             <div class="news-grid">
                 <div class="news-card">
-                    <div class="news-image">Foto Vaksinasi</div>
+                <div class="news-image">
+                    <img src="<?= base_url('uploads/kegiatan/vaksin.jpg') ?>" alt="Foto Vaksinansi Covid 10">
+                </div>
                     <div class="news-content">
                         <div class="news-meta">
                             <span class="news-category">Kesehatan</span>
@@ -108,7 +109,9 @@
                 </div>
 
                 <div class="news-card">
-                    <div class="news-image">Foto Bantuan Sosial</div>
+                <div class="news-image">
+                    <img src="<?= base_url('uploads/kegiatan/bantuan.jpg') ?>" alt="Foto Bantuan Sosial">
+                </div>
                     <div class="news-content">
                         <div class="news-meta">
                             <span class="news-category">Sosial</span>
@@ -121,7 +124,9 @@
                 </div>
 
                 <div class="news-card">
-                    <div class="news-image">Foto Gotong Royong</div>
+                <div class="news-image">
+                    <img src="<?= base_url('uploads/kegiatan/gotongroyong.jpg') ?>" alt="Gotong Royong">
+                </div>
                     <div class="news-content">
                         <div class="news-meta">
                             <span class="news-category">Lingkungan</span>
@@ -154,9 +159,9 @@
                     <h3>Alamat</h3>
                     <p>
                         Jl. Contoh No. 123<br>
-                        Kelurahan Contoh<br>
-                        Kecamatan Contoh<br>
-                        Kota Contoh 12345
+                        Kelurahan Kademangan<br>
+                        Kecamatan Setu<br>
+                        Kota Tanggerang Selatan12345
                     </p>
                 </div>
 
@@ -174,8 +179,8 @@
                     <div class="contact-icon contact-orange">✉️</div>
                     <h3>Email</h3>
                     <p>
-                        kelurahan.contoh@kotacontoh.go.id<br>
-                        info@kelurahancontoh.go.id
+                        kelurahankademangan@gmail.com<br>
+                        infokademangan@kelurahankademangan.go.id
                     </p>
                 </div>
             </div>

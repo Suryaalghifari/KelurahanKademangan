@@ -4,9 +4,12 @@ window.addEventListener("load", function () {
   if (loader) {
     // Delay minimum 1 detik agar loader terlihat
     setTimeout(() => {
-      loader.style.opacity = "0";
-      setTimeout(() => (loader.style.display = "none"), 500); // Setelah fade-out
-    }, 1000); // Loader muncul minimal 1 detik
+      loader.style.opacity = 0;
+      loader.style.pointerEvents = "none"; // agar tidak blok klik
+      setTimeout(() => {
+        loader.style.display = "none"; // hilangkan dari DOM
+      }, 300); // lebih cepat juga boleh
+    }, 1000); // atau sesuaikan delay loader kamu
   }
 });
 
@@ -123,3 +126,13 @@ function confirmLogout() {
     }
   });
 }
+
+window.addEventListener("load", function () {
+  const loader = document.getElementById("globalLoader");
+  if (loader) {
+    loader.style.opacity = 0;
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
+  }
+});

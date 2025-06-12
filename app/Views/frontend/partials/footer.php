@@ -4,13 +4,16 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <div class="logo">KC</div>
+                        <div class="logo">
+                        <img src="<?= base_url('uploads/logo/kademangan.png') ?>" class="logo-img" alt="Logo Kelurahan" />
+
+                    </div>
                         <div>
-                            <h3>Kelurahan Contoh</h3>
+                            <h3>Kelurahan Kademangan</h3>
                             <p style="color: #9ca3af; font-size: 0.9rem;">Melayani dengan Hati</p>
                         </div>
                     </div>
-                    <p style="color: #9ca3af;">Website resmi Kelurahan Contoh, Kecamatan Contoh, Kota Contoh</p>
+                    <p style="color: #9ca3af;">Website resmi Kelurahan Kademangan, Kecamatan Setu, Kota Tanggerang Selatan</p>
                 </div>
 
                 <div class="footer-section">
@@ -44,7 +47,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>© 2024 Kelurahan Contoh. Hak Cipta Dilindungi Undang-Undang.</p>
+                <p>© 2024 Kelurahan Kademangan. Hak Cipta Dilindungi Undang-Undang.</p>
             </div>
         </div>
     </footer>
