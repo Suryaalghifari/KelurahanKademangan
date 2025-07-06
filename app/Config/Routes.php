@@ -10,6 +10,8 @@ use CodeIgniter\Router\RouteCollection;
 // ===== FRONTEND ROUTES ===
 // =========================
 
+$routes->get('cekdb', 'CekDB::index');
+
 $routes->get('test-email', 'TestEmail::index');
 $routes->get('/', 'Frontend\Beranda::index');
 
